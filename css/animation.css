@@ -1,0 +1,84 @@
+.hero-image {
+    animation: up-down 2s linear;
+    animation-delay: 2s;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.text-hero{
+    animation: desolve-x 1.5s linear;
+    animation-delay: 1.5s;
+}
+
+.text-hero-1{
+    animation: desolve-x 1.5s linear;
+    animation-delay: 2s;
+}
+
+@keyframes desolve-x {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.text-hero-2{
+    animation: desolve-y 1s linear;
+    animation-delay: 2s;
+}
+
+.btn-hero{
+    animation: desolve-x 1s linear;
+    animation-delay: 2s;
+}
+
+.btn-hero-1{
+    animation: desolve-x 1s linear;
+    animation-delay: 2.5s;
+}
+
+@keyframes desolve-y {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.scroll-top-btn{
+    animation: jump 1s infinite ease-in-out;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(1px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

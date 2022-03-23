@@ -1,0 +1,978 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwindcss -->
+
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- fontawesome icons -->
+
+    <title>Portfolio - Oussama Aoulad Lahcene</title>
+</head>
+
+<body class="relative dark font-sans">
+
+    <div class="bg-slate-200 dark:bg-slate-900">
+
+        <!-- Loader -->
+        <div class="fixed top-0 left-0 bg-slate-900 h-screen w-full flex justify-center items-center z-50" id="loader">
+            <div class="loader"></div>
+        </div>
+        <!-- Loader -->
+
+        <!-- Navigation Mobile-->
+        <div class="fixed w-full lg:w-96 h-screen z-30 flex items-center -translate-x-full shadow-blue-900 shadow-2xl transition duration-300 ease-in-out menu-mobile-dark"
+            id="mobile-menu">
+            <div class="absolute top-8 right-8 text-white cursor-pointer" id="close-menu">
+                <i class="fas fa-times text-3xl hover:text-blue-900 hover:scale-125 transition duration-300 ease-in-out"></i>
+            </div>
+
+            <ul class="flex w-full h-full sm:h-1/2 flex-col justify-center items-center my-0 sm:my-4">
+                <div >
+                    <li class="mb-4 sm:mb-10 text-center">
+                        <h3 class="font-bold text-4xl cursor-pointer text-white">Aoulad Lahcene Oussama</h3>
+                        <p class="m-auto my-2 w-32 sm:w-48 h-2 bg-white rounded-full"></p>
+                    </li>
+
+                    <li class="hover:scale-125 transition duration-300 ease-in-out mb-4 menu-item">
+                        <a href="#hero"
+                            class="text-center text-slate-300 dark:text-slate-600 hover:text-white transition duration-300 ease-in-out">
+                            <p><i class="fas fa-home cursor-pointer text-xl -mb-2"></i></p>
+                            <p class="font-bold text-xl">Home</p>
+                        </a>
+                    </li>
+                    <li class="hover:scale-125 transition duration-300 ease-in-out mb-4 menu-item">
+                        <a href="#aboutme"
+                            class="text-center text-slate-300 dark:text-slate-600 hover:text-white transition duration-300 ease-in-out">
+                            <p><i class="fas fa-user cursor-pointer text-xl -mb-2"></i></p>
+                            <p class="font-bold text-xl">About me</p>
+                        </a>
+
+                    </li>
+                    <li class="hover:scale-125 transition duration-300 ease-in-out mb-4 menu-item">
+                        <a href="#myskills"
+                            class="text-center text-slate-300 dark:text-slate-600 hover:text-white transition duration-300 ease-in-out">
+                            <p><i class="fas fa-atom cursor-pointer text-xl -mb-2"></i></p>
+                            <p class="font-bold text-xl">My skills</p>
+                        </a>
+
+                    </li>
+                    <li class="hover:scale-125 transition duration-300 ease-in-out mb-4 menu-item">
+                        <a href="#portfolio"
+                            class="text-center text-slate-300 dark:text-slate-600 hover:text-white transition duration-300 ease-in-out">
+                            <p><i class="fas fa-diagram-project cursor-pointer text-xl -mb-2"></i></p>
+                            <p class="font-bold text-xl">Portfolio</p>
+                        </a>
+
+                    </li>
+                    <li class="hover:scale-125 transition duration-300 ease-in-out mb-4 menu-item">
+                        <a href="#contactme"
+                            class="text-center text-slate-300 dark:text-slate-600 hover:text-white transition duration-300 ease-in-out">
+                            <p><i class="fas fa-envelope cursor-pointer text-xl -mb-2"></i></p>
+                            <p class="font-bold text-xl">Contact me</p>
+                        </a>
+
+                    </li>
+                </div>
+
+            </ul>
+
+            <div
+                class="absolute w-full bottom-2 sm:bottom-8 left-0 sm:left-8 text-white cursor-pointer flex flex-col sm:flex-row justify-center sm:justify-start items-center">
+                <span class="-mb-1 sm:mb-0">Find me on</span>
+                <div class="w-0 h-0 sm:h-1 sm:w-24 h-1 rounded-full bg-white mx-4"></div>
+                <div>
+                    <a href="https://www.linkedin.com/in/oussamaaouladlahcene" target="_blank"><i class="fa-brands fa-linkedin text-sm sm:text-xl mx-1 sm:mx-2"></i></a>
+                    <a href="https://github.com/AouladLahceneOussama" target="_blank"><i class="fa-brands fa-github text-sm sm:text-xl mx-1 sm:mx-2"></i></a>
+                    <a href="https://www.facebook.com/Oussama.Tet/" target="_blank"><i class="fa-brands fa-facebook text-sm sm:text-xl mx-1 sm:mx-2"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation Mobile-->
+
+        <!-- section number -->
+        <div
+            class="fixed bottom-0 right-2 sm:right-12 flex flex-col justify-center items-center z-10 text-slate-900 dark:text-white">
+            <div class="mb-2">
+                <ul class="flex flex-col items-center space-y-2">
+                    <li class="scroll-top-btn"><i class="fa-solid fa-circle-chevron-up cursor-pointer text-xl text-blue-600 dark:text-blue-900 hidden" id="scrollTop"></i>
+                    </li>
+                    <li ><a href="https://www.linkedin.com/in/oussamaaouladlahcene" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/AouladLahceneOussama" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.facebook.com/Oussama.Tet/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                </ul>
+            </div>
+            <div class="h-12 w-1 rounded-full bg-slate-900 dark:bg-white"></div>
+            <h1 class="font-extrabold text-3xl sm:text-5xl my-2" id="section-number">00</h1>
+            <div class="h-12 w-1 rounded-full bg-slate-900 dark:bg-white"></div>
+        </div>
+        <!-- section number -->
+
+        <!-- Navigation -->
+        <div class="fixed w-full top-0 py-2 flex justify-around items-baseline z-20 shadow-lg menu-scroll-dark" id="fixed-nav">
+            <div class="absolute bottom-0 w-full bg-slate-800 h-1 mt-1">
+                <div class="bg-blue-600 dark:bg-blue-900 h-1" style="width: 0%" id="scrollStat"></div>
+            </div>
+            <p class="font-bold text-white dark:text-slate-400 text-sm ">
+                <i class="fa-solid fa-bars text-xl text-white dark:text-slate-400 cursor-pointer mx-2"
+                    id="open-menu"></i>
+                Aoulad Lahcene Oussama
+            </p>
+            <p>
+                <i class="fa-solid fa-moon text-xl text-white dark:text-slate-400 cursor-pointer" id="toggleTheme"></i>
+            </p>
+        </div>
+        <!-- Navigation -->
+
+        <!-- Home section -->
+        <section class="relative min-h-full h-screen w-full flex justify-center items-center z-0" id="hero">
+            <div class="container">
+                <div
+                    class="flex flex-col text-center px-10 sm:px-0 sm:text-left sm:flex-row justify-center items-center text-white w-full h-screen">
+                    <div class="relative w-80 sm:w-96 md:w-128 hero-image">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 575 585.59">
+                            <mask id="mask0" mask-type="alpha">
+                                <path
+                                    d="M656,306s-48,67.43-48,151A236.5,236.5,0,0,1,371.48,693h-2C239,693,133.27,587.39,133,457c0,0-17.38-184.55,85.63-240.46a114.32,114.32,0,0,1,46.24-13.25c36.69-2.7,151.27-14.76,242.6-64a266.25,266.25,0,0,1,97.85-30.53C677.06,101,759.94,122.58,656,306Z"
+                                    transform="translate(-130 -106.41)" class="fill-blue-600 dark:fill-blue-900 dark-blob blob" />
+                                <circle cx="31.35" cy="105.18" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="105.18" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="105.18" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="105.18" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="105.18" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="125.39" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="125.39" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="125.39" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="125.39" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="125.39" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="64.77" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="64.77" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="64.77" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="64.77" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="84.98" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="84.98" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="84.98" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="84.98" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="84.98" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="145.59" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="145.59" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="145.59" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="145.59" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="145.59" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="165.79" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="165.79" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="165.79" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="165.79" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="165.79" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="186" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="186" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="186" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="186" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="186" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="206.2" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="206.2" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="206.2" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="206.2" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="206.2" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="226.41" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="226.41" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="226.41" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="226.41" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="226.41" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="246.61" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="246.61" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="246.61" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="246.61" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="246.61" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="266.81" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="266.81" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="266.81" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="266.81" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="266.81" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="287.02" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="287.02" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="287.02" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="287.02" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="287.02" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="307.22" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="307.22" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="307.22" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="307.22" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="307.22" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="327.43" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="327.43" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="327.43" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="327.43" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="327.43" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="347.63" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="347.63" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="347.63" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="347.63" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="347.63" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="367.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="367.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="367.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="367.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="367.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="388.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="388.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="388.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="388.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="388.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="408.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.35" cy="186" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.35" cy="206.2" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="408.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="408.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="408.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="408.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="105.18" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="125.39" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="145.59" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="165.79" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="226.41" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="246.61" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="266.81" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="287.02" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="307.22" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="327.43" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="347.63" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="367.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="388.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="408.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="428.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="428.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="428.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="428.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="428.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="449.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="449.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="449.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="449.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="449.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="469.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="469.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="469.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="469.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="469.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="428.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="449.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="469.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="489.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="489.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="489.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="489.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="489.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="510.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="510.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="510.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="510.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="510.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="530.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="530.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="530.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="530.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="489.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+
+                            </mask>
+
+                            <g mask="url(#mask0)">
+                                <path
+                                    d="M656,306s-48,67.43-48,151A236.5,236.5,0,0,1,371.48,693h-2C239,693,133.27,587.39,133,457c0,0-17.38-184.55,85.63-240.46a114.32,114.32,0,0,1,46.24-13.25c36.69-2.7,151.27-14.76,242.6-64a266.25,266.25,0,0,1,97.85-30.53C677.06,101,759.94,122.58,656,306Z"
+                                    transform="translate(-130 -106.41)" class="fill-blue-600 dark:fill-blue-900 dark-blob blob"  />
+                                <circle cx="31.35" cy="105.18" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="105.18" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="105.18" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="105.18" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="105.18" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="125.39" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="125.39" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="125.39" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="125.39" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="125.39" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="64.77" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="64.77" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="64.77" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="64.77" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="84.98" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="84.98" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="84.98" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="84.98" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="84.98" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="145.59" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="145.59" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="145.59" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="145.59" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="145.59" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="165.79" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="165.79" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="165.79" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="165.79" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="165.79" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="186" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="186" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="186" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="186" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="186" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="206.2" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="206.2" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="206.2" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="206.2" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="206.2" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="226.41" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="226.41" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="226.41" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="226.41" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="226.41" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="246.61" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="246.61" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="246.61" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="246.61" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="246.61" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="266.81" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="266.81" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="266.81" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="266.81" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="266.81" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="287.02" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="287.02" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="287.02" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="287.02" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="287.02" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="307.22" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="307.22" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="307.22" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="307.22" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="307.22" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="327.43" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="327.43" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="327.43" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="327.43" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="327.43" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="347.63" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="347.63" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="347.63" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="347.63" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="347.63" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="367.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="367.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="367.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="367.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="367.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="388.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="388.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="388.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="388.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="388.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="408.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.35" cy="186" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.35" cy="206.2" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="408.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="408.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="408.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="408.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="105.18" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="125.39" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="145.59" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="165.79" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="226.41" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="246.61" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="266.81" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="287.02" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="307.22" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="327.43" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="347.63" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="367.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="388.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="408.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="428.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="428.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="428.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="428.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="428.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="449.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="449.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="449.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="449.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="449.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="469.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="469.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="469.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="469.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="469.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="428.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="449.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="469.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="489.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="489.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="489.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="489.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="489.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="31.35" cy="510.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="510.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="510.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="510.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="510.04" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="57.67" cy="530.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="84" cy="530.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="110.33" cy="530.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="136.65" cy="530.24" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+                                <circle cx="7.65" cy="489.83" r="7.35" class="fill-slate-900 opacity-80 dark:fill-white dark:opacity-40" />
+
+                                <image class="w-full masked-image" x='-25' y='100' href="assets/oussama.png" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="relative ml-0 -mt-10 sm:-ml-24 z-2">
+
+                        <h1 class="font-extrabold text-4xl md:text-7xl text-slate-900 dark:text-white text-hero">
+                            Junior Computer
+                        </h1>
+                        <h1 class="font-extrabold text-3xl md:text-6xl text-slate-900 dark:text-white text-hero-1">
+                            Science Engineer
+                        </h1>
+                        <h1 class="font-thin text-lg text-slate-900 dark:text-white mt-2 sm:mt-8 text-hero-2">
+                            Full-Stack developer, ambitious about learning
+                            new things and joining new adventures
+                        </h1>
+
+                        <div class="mt-5 btn-hero">
+                            <a href="assets/AOULAD LAHCENE Oussama - English.pdf" target="_blank"
+                                class="bg-slate-900 dark:bg-white text-white dark:text-black border-4 border-slate-900 dark:border-white px-6 py-2 mr-2 hover:text-slate-900 dark:hover:text-white hover:bg-transparent dark:hover:bg-transparent  transition duration-500 ease-in-out font-bold uppercase cursor-pointer">
+                                cv
+                            </a>
+
+                            <a href="#aboutme"
+                                class=" border-4 border-slate-900 dark:border-white text-slate-900 dark:text-white px-6 py-2 hover:text-white hover:bg-blue-600 dark:hover:bg-blue-800 transition duration-500 ease-in-out font-bold uppercase cursor-pointer">
+                                About me
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Home section -->
+
+        <!-- About me section -->
+        <section class="min-h-screen w-full flex justify-center items-center mt-10 sm:mt-0" id="aboutme">
+            <div class="px-10 sm:px-0">
+
+                <div class="flex flex justify-center" data-aos="fade-down">
+                    <div>
+                        <h1 class="font-extrabold text-5xl text-slate-900 dark:text-white my-1 uppercase">About me</h1>
+                        <div class="w-32 h-2 bg-slate-900 dark:bg-white rounded-full"></div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-center space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4 mt-10">
+
+                    <div class="w-full sm:w-48 h-32 bg-slate-800 text-white p-4 text-center rounded-xl shadow-xl"
+                        data-aos="fade-right">
+                        <i class="fa-solid fa-fire-flame-curved text-xl text-blue-700 dark:text-blue-900"></i>
+                        <p class="font-bold">Experience</p>
+                        <p class="font-thin text-sm mt-2">Looking for new experiences</p>
+                    </div>
+
+                    <div class="w-full sm:w-48 h-32 bg-slate-800 text-white p-4 text-center rounded-xl shadow-xl"
+                        data-aos="fade-right" data-aos-delay="150">
+                        <i class="fa-solid fa-briefcase text-xl text-blue-700 dark:text-blue-900"></i>
+                        <p class="font-bold">Completed</p>
+                        <p class="font-thin text-sm mt-2">10 Projects</p>
+                    </div>
+
+                    <div class="w-full sm:w-48 h-32 bg-slate-800 text-white p-4 text-center rounded-xl shadow-xl"
+                        data-aos="fade-right" data-aos-delay="300">
+                        <i class="fa-solid fa-code text-xl text-blue-700 dark:text-blue-900"></i>
+                        <p class="font-bold">Work</p>
+                        <p class="font-thin text-sm mt-2">Full-stack developer</p>
+                    </div>
+                </div>
+
+                <div class="max-w-xl px-2 sm:px-0" data-aos="fade-down">
+                    <p class="text-gray-900 dark:text-gray-200 font-thin text-lg mt-10">
+                        Want to work with a well-experienced developer?
+                        <br><br>
+                        With <b>more than 2 years of experience</b> in web/mobile development on two sides front-end and
+                        back-end.<br>
+                        I mainly work with different technologies, in most cases with Laravel/livewire or
+                        Spring-boot/reacts,
+                        also I am a fast learner I give all my time to learn new things and sharpen my skills to
+                        become more professional in my work.
+                    </p>
+
+                    <div class="mt-5">
+                        <a href="#contactme"
+                            class="bg-blue-600 dark:bg-blue-900 px-6 py-2 text-white font-bold rounded-lg shadow-lg cursor-pointer dark:hover:bg-blue-700 hover:bg-blue-800 transition duration-500 ease-in-out">
+
+                            <i class="fa-solid fa-paper-plane"></i> Contact me
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- About me section -->
+
+        <!-- My skills -->
+        <section class="min-h-screen w-full flex justify-center items-center mt-14 sm:mt-0" id="myskills">
+            <div class="px-10 sm:px-0">
+
+                <div class="flex flex justify-center" data-aos="fade-down">
+                    <div>
+                        <h1 class="font-extrabold text-5xl text-slate-900 dark:text-white my-1 uppercase">my skills</h1>
+                        <div class="w-32 h-2 bg-slate-900 dark:bg-white rounded-full"></div>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col items-center space-y-4 lg:space-y-0 lg:flex-row lg:items-start lg:space-x-8 mt-10">
+
+                    <div class="w-full flex flex-col md:flex-row justify-center items-center">
+
+                        <div class="text-slate-900 dark:text-white p-4" data-aos="fade-down">
+                            <div class="flex justify-center items-start space-x-4">
+                                <i class="fa-solid fa-binoculars text-4xl text-blue-700 dark:text-blue-900"></i>
+                                <div>
+                                    <p class="font-bold text-2xl">Frontend</p>
+                                    <p class="w-full md:w-32 font-thin text-sm text-slate-500">
+                                        Good experience in
+                                        front-end
+                                        design
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <ul>
+                                    <li class="my-3">
+                                        <span class="font-thin text-xs ">Html</span>
+                                        <div class="w-full bg-slate-300 dark:bg-slate-800 h-1 mt-1 rounded-full">
+                                            <div class="bg-blue-700 dark:bg-blue-900 h-1 rounded-full"
+                                                style="width: 80%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="my-3">
+                                        <span class="font-thin text-xs ">Css</span>
+                                        <div class="w-full bg-slate-300 dark:bg-slate-800 h-1 mt-1 rounded-full">
+                                            <div class="bg-blue-700 dark:bg-blue-900 h-1 rounded-full"
+                                                style="width: 80%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="my-3">
+                                        <span class="font-thin text-xs ">JavaScript</span>
+                                        <div class="w-full bg-slate-300 dark:bg-slate-800 h-1 mt-1 rounded-full">
+                                            <div class="bg-blue-700 dark:bg-blue-900 h-1 rounded-full"
+                                                style="width: 60%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="my-3">
+                                        <span class="font-thin text-xs ">TailwindCss</span>
+                                        <div class="w-full bg-slate-300 dark:bg-slate-800 h-1 mt-1 rounded-full">
+                                            <div class="bg-blue-700 dark:bg-blue-900 h-1 rounded-full"
+                                                style="width: 85%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="my-3">
+                                        <span class="font-thin text-xs ">ReactJs</span>
+                                        <div class="w-full bg-slate-300 dark:bg-slate-800 h-1 mt-1 rounded-full">
+                                            <div class="bg-blue-700 dark:bg-blue-900 h-1 rounded-full"
+                                                style="width: 65%"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class=" text-slate-900 dark:text-white p-4 py-8 border-t-4 md:py-0 md:border-t-0 md:px-8 md:border-l-4 border-slate-300 dark:border-blue-700 dark:border-blue-900" data-aos="fade-down" data-aos-delay="50">
+                            <div class="flex justify-center items-start space-x-4">
+                                <i class="fa-solid fa-share-nodes text-4xl text-blue-700 dark:text-blue-900"></i>
+                                <div>
+                                    <p class="font-bold text-2xl">Backend</p>
+                                    <p class="w-full md:w-32 font-thin text-sm text-slate-500">
+                                        Good experience in
+                                        Backend
+                                        frameworks
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <ul>
+                                    <li class="my-3">
+                                        <span class="font-thin text-xs ">Php</span>
+                                        <div class="w-full bg-slate-300 dark:bg-slate-800 h-1 mt-1 rounded-full">
+                                            <div class="bg-blue-700 dark:bg-blue-900 h-1 rounded-full"
+                                                style="width: 80%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="my-3">
+                                        <span class="font-thin text-xs ">Laravel</span>
+                                        <div class="w-full bg-slate-300 dark:bg-slate-800 h-1 mt-1 rounded-full">
+                                            <div class="bg-blue-700 dark:bg-blue-900 h-1 rounded-full"
+                                                style="width: 70%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="my-3">
+                                        <span class="font-thin text-xs ">SpringBoot</span>
+                                        <div class="w-full bg-slate-300 dark:bg-slate-800 h-1 mt-1 rounded-full">
+                                            <div class="bg-blue-700 dark:bg-blue-900 h-1 rounded-full"
+                                                style="width: 40%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="my-3">
+                                        <span class="font-thin text-xs ">Java</span>
+                                        <div class="w-full bg-slate-300 dark:bg-slate-800 h-1 mt-1 rounded-full">
+                                            <div class="bg-blue-700 dark:bg-blue-900 h-1 rounded-full"
+                                                style="width: 60%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="my-3">
+                                        <span class="font-thin text-xs ">Python</span>
+                                        <div class="w-full bg-slate-300 dark:bg-slate-800 h-1 mt-1 rounded-full">
+                                            <div class="bg-blue-700 dark:bg-blue-900 h-1 rounded-full"
+                                                style="width: 40%"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flex flex-col md:flex-row justify-center items-center">
+
+                        <div class="text-slate-900 dark:text-white p-4" data-aos="fade-down" data-aos-delay="150">
+                            <div class="flex justify-center items-start space-x-4">
+                                <i class="fa-solid fa-screwdriver-wrench text-4xl text-blue-700 dark:text-blue-900"></i>
+                                <div>
+                                    <p class="font-bold text-2xl">Tolls</p>
+                                    <p class="w-full md:w-32 font-thin text-sm text-slate-500">
+                                        Using organisation and dev tolls like
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <ul>
+                                    <li class="my-3">
+                                        <span class="font-thin text-xs ">VS Code</span>
+                                        <div class="w-full bg-slate-300 dark:bg-slate-800 h-1 mt-1 rounded-full">
+                                            <div class="bg-blue-700 dark:bg-blue-900 h-1 rounded-full"
+                                                style="width: 90%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="my-3">
+                                        <span class="font-thin text-xs ">Github</span>
+                                        <div class="w-full bg-slate-300 dark:bg-slate-800 h-1 mt-1 rounded-full">
+                                            <div class="bg-blue-700 dark:bg-blue-900 h-1 rounded-full"
+                                                style="width: 80%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="my-3">
+                                        <span class="font-thin text-xs ">Trello</span>
+                                        <div class="w-full bg-slate-300 dark:bg-slate-800 h-1 mt-1 rounded-full">
+                                            <div class="bg-blue-700 dark:bg-blue-900 h-1 rounded-full"
+                                                style="width: 70%"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class=" text-slate-900 dark:text-white p-4 py-8 border-t-4 md:py-0 md:border-t-0 md:px-8 md:border-l-4 border-slate-300 dark:border-blue-700 dark:border-blue-900" data-aos="fade-down" data-aos-delay="200">
+                            <div class="flex justify-center items-start space-x-4">
+                                <i class="fa-solid fa-pen-nib text-4xl text-blue-700 dark:text-blue-900"></i>
+                                <div>
+                                    <p class="font-bold text-2xl">Design</p>
+                                    <p class="w-full md:w-32 font-thin text-sm text-slate-500">
+                                        Good experience in using adobe tolls
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <ul>
+                                    <li class="my-3">
+                                        <span class="font-thin text-xs ">Photoshop</span>
+                                        <div class="w-full bg-slate-300 dark:bg-slate-800 h-1 mt-1 rounded-full">
+                                            <div class="bg-blue-700 dark:bg-blue-900 h-1 rounded-full"
+                                                style="width: 70%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="my-3">
+                                        <span class="font-thin text-xs ">Adobe Illustrator</span>
+                                        <div class="w-full bg-slate-300 dark:bg-slate-800 h-1 mt-1 rounded-full">
+                                            <div class="bg-blue-700 dark:bg-blue-900 h-1 rounded-full"
+                                                style="width: 70%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="my-3">
+                                        <span class="font-thin text-xs ">Adobe XD</span>
+                                        <div class="w-full bg-slate-300 dark:bg-slate-800 h-1 mt-1 rounded-full">
+                                            <div class="bg-blue-700 dark:bg-blue-900 h-1 rounded-full"
+                                                style="width: 80%"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- My skills -->
+
+        <!-- Portfolio -->
+        <section class="min-h-screen w-full flex justify-center items-center mt-10 sm:mt-0" id="portfolio">
+            <div class="w-full px-10 sm:px-0">
+
+                <div class="flex flex justify-center" data-aos="fade-down">
+                    <div>
+                        <h1 class="font-extrabold text-5xl text-slate-900 dark:text-white my-1 uppercase">
+                            Portfolio
+                        </h1>
+                        <div class="w-32 h-2 bg-slate-900 dark:bg-white rounded-full"></div>
+                    </div>
+                </div>
+
+                <div class="m-auto max-w-5xl mt-10" data-aos="zoom-in">
+                    <div class="swiper mySwiper">
+
+                        <div class="swiper-wrapper">
+
+                            <div
+                                class="swiper-slide w-full md:w-1/3 flex flex-col items-center md:flex-row justify-center md:items-start py-10">
+                                <iframe class="w-full sm:mx-4 md:w-1/2 h-80"
+                                    src="https://www.youtube.com/embed/79sIG3jUX2Y" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+
+                                <div class="m-0 md:m-0 md:w-48 mt-4 md:mt-0 md:ml-4">
+                                    <h1 class="font-bold text-slate-900 dark:text-white text-2xl mb-2">Responsive React
+                                        Movies App With API
+                                    </h1>
+                                    <p class="font-thin text-xs text-slate-400">ReactJs, themobiedb api</p>
+
+                                    <p class="text-slate-900 dark:text-white mt-10 uppercase">Project description</p>
+                                    <div class="w-24 h-1 bg-slate-900 dark:bg-white rounded-full"></div>
+
+                                    <p class="font-medium text-gray-600 text-xs mt-2">During this project, I designed a
+                                        movie app by consuming an API using reactJs.</p>
+
+                                    <div class="mt-10">
+                                        <a href="" class="bg-blue-900 text-white px-4 py-2 rounded-xl">
+                                            <i class="fa-brands fa-github"></i> View code </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="swiper-slide w-full md:w-1/3 flex flex-col items-center md:flex-row justify-center md:items-start py-10">
+                                <iframe class="w-full md:w-1/2 h-80" src="https://www.youtube.com/embed/58Pu107025c"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <div class="m-auto md:m-0 md:w-48 mt-4 md:mt-0 md:ml-4">
+                                    <h1 class="font-bold text-slate-900 dark:text-white text-2xl mb-2">
+                                        Laravel Livewire & TailwindCSS ( car-rent )
+                                    </h1>
+                                    <p class="font-thin text-xs text-slate-400">Laravel, Livewire, TailwindCSS</p>
+
+                                    <p class="text-slate-900 dark:text-white mt-10 uppercase">Project description</p>
+                                    <div class="w-24 h-1 bg-slate-900 dark:bg-white rounded-full"></div>
+
+                                    <p class="w-full font-medium text-gray-600 text-xs mt-2">
+                                        The main idea of this project
+                                        is to create a platform where the users can rent their face to
+                                        face.
+                                    </p>
+
+                                    <div class="mt-10">
+                                        <a href="" class="bg-blue-900 text-white px-4 py-2 rounded-xl">
+                                            <i class="fa-brands fa-github"></i> View code </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="swiper-slide w-full md:w-1/3 flex flex-col items-center md:flex-row justify-center md:items-start py-10">
+                                <iframe class="w-full md:w-1/2 h-80" src="https://www.youtube.com/embed/p1bfhNRzB2E"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <div class="m-auto md:m-0 md:w-48 mt-4 md:mt-0 md:ml-4">
+                                    <h1 class="font-bold text-slate-900 dark:text-white text-2xl mb-2">Laravel Livewire
+                                        & TailwindCSS (
+                                        art-certif )</h1>
+                                    <p class="font-thin text-xs text-slate-400">Laravel, Livewire, TailwindCSS</p>
+
+                                    <p class="text-slate-900 dark:text-white mt-10 uppercase">Project description</p>
+                                    <div class="w-24 h-1 bg-slate-900 dark:bg-white rounded-full"></div>
+                                    <p class="font-medium text-gray-600 text-xs mt-2">
+                                        This project is about certification of
+                                        arts, where the users ask or search for certif of their own arts.
+                                    </p>
+
+                                    <div class="mt-10">
+                                        <a href="" class="bg-blue-900 text-white px-4 py-2 rounded-xl"><i
+                                                class="fa-brands fa-github"></i> View code </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-button-next">
+                            <i
+                                class="fa-solid fa-circle-chevron-right text-xl hover:text-blue-300 transition duration-500 ease-in-out"></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i
+                                class="fa-solid fa-circle-chevron-left text-xl hover:text-blue-300 transition duration-500 ease-in-out"></i>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- Portfolio -->
+
+        <!-- contactme -->
+        <section class="min-h-screen w-full flex justify-center items-center my-10 sm:my-0" id="contactme">
+            <div class="w-full px-10 sm:px-0">
+
+                <div class="flex flex justify-center" data-aos="fade-down">
+                    <div>
+                        <h1 class="font-extrabold text-5xl text-slate-900 dark:text-white my-1 uppercase">Contact me
+                        </h1>
+                        <div class="w-32 h-2 bg-slate-900 dark:bg-white rounded-full"></div>
+                    </div>
+                </div>
+
+                <form class="m-auto w-full sm:w-1/2 mt-10">
+                    <div class="flex flex-wrap -mx-3 mb-2">
+                        <div class="w-full md:w-1/2 px-3 mb-2 md:mb-0" data-aos="fade-right" data-aos-delay="50">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="grid-first-name">
+                                First Name
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-600 dark:bg-gray-200 text-white dark:text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-800 dark:focus:bg-white focus:border-gray-500"
+                                id="grid-first-name" type="text" placeholder="Jhon">
+                        </div>
+                        <div class="w-full md:w-1/2 px-3" data-aos="fade-right" data-aos-delay="100">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="grid-last-name">
+                                Last Name
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-600 dark:bg-gray-200 text-white dark:text-gray-700 border border-gray-400 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-800 dark:focus:bg-white focus:border-gray-500"
+                                id="grid-last-name" type="text" placeholder="Doe">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-2">
+                        <div class="w-full px-3" data-aos="fade-down" data-aos-delay="150">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="grid-password">
+                                E-mail
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-gray-600 dark:bg-gray-200 text-white dark:text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-800 dark:focus:bg-white focus:border-gray-500"
+                                id="email" type="email">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-2" data-aos="fade-down" data-aos-delay="200">
+                        <div class="w-full px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="grid-password">
+                                Message
+                            </label>
+                            <textarea
+                                class="appearance-none block w-full bg-gray-600 dark:bg-gray-200 text-white dark:text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-800 dark:focus:bg-white focus:border-gray-500 h-32 resize-none"
+                                id="message"></textarea>
+                        </div>
+                    </div>
+                    <div class="md:flex md:items-center" data-aos="fade-down" data-aos-delay="200">
+                        <div class="md:w-1/3">
+                            <button
+                                class="shadow bg-blue-700 dark:bg-blue-900 hover:bg-blue-800 dark:hover:bg-blue-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded transition duration-500 ease-in-out"
+                                type="button">
+                                Send
+                            </button>
+                        </div>
+                        <div class="md:w-2/3"></div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- contactme -->
+
+        <!-- footer -->
+        <footer class="text-center bg-gray-900 text-white">
+            <div class="px-6 pt-6">
+                <div class="w-full flex justify-center mb-6">
+
+                    <a href="https://www.facebook.com/Oussama.Tet/" target="_blank"
+                        class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                        <i class="fa-brands fa-facebook-f leading-loose"></i>
+                    </a>
+
+                    <a href="https://github.com/AouladLahceneOussama" target="_blank"
+                        class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                        <i class="fa-brands fa-github-alt leading-loose"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/oussamaaouladlahcene" target="_blank"
+                        class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                        <i class="fa-brands fa-linkedin-in leading-loose"></i>
+                    </a>
+
+                    <a href="mailto:oussama.aouladlahcene@gmail.com" target="_blank"
+                        class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                        <i class="fa-solid fa-envelope leading-loose"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="text-center py-4" style="background-color: rgba(0, 0, 0, 0.2);">
+
+                <p> <b> Aoulad Lahcene Oussama </b> - Portfolio</p>
+                <p class="font-thin text-xs"> Copyright © 2022 </p>
+            </div>
+        </footer>
+        <!-- footer -->
+
+    </div>
+    <!-- js scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/tailwind.config.js"></script>
+    <script src="js/main.js"></script>
+    <!-- js scripts -->
+
+</body>
+
+</html>
