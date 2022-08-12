@@ -16,12 +16,12 @@
 
 .text-hero{
     animation: desolve-x 1.5s linear;
-    animation-delay: 1.5s;
+    animation-delay: 1.6s;
 }
 
 .text-hero-1{
     animation: desolve-x 1.5s linear;
-    animation-delay: 2s;
+    animation-delay: 1.6s;
 }
 
 @keyframes desolve-x {
